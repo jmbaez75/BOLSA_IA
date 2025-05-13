@@ -23,7 +23,7 @@ def main():
         if opcion == "1":
             subprocess.run([sys.executable, "scripts/cargar_datos.py"])
         elif opcion == "2":
-            entrenar_modelo()
+            subprocess.run([sys.executable, "scripts/entrenar_modelo.py"])
         elif opcion == "3":
             evaluar_modelo()
         elif opcion == "4":
